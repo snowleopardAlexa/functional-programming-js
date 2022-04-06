@@ -167,3 +167,29 @@ const updatedCat1 = createCat('Nala', cat1.gender)
 // functions pure. And this is what we mean when we say that we want to keep data 
 // and functions separate.
 
+// ENSURING IMMUTABILITY = ESLint
+
+// correct
+const x = 5
+
+// incorrect
+x = 6
+
+const numbers = [1,2,3,4,5]
+// we can't redefine the array in this way
+numbers = ['hello']
+// but we can in this way - JS WON'T COMPLAIN ABOUT IT! --> WE MUTATE ACCIDENTALY NOW!
+numbers[0] = 100 
+
+const person = {
+    name: "Alexa",
+    age: 43
+}
+// we can't redefine object in this way
+person = { name: "Bob" }
+// but we can in this way
+person.name = "Bob"
+
+// ESLint --> prevents from accidental mutation!
+// ESLint --> install VS code plugin IMMUTABLE
+
