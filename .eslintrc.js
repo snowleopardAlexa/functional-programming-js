@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 module.exports = {
     "env": {
         "browser": true,
@@ -15,8 +16,7 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "react",
-        "immutable"
+        "immutablejs"
     ],
     "rules": {
         "immutable/no-mutation:" : 2,
