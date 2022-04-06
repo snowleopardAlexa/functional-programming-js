@@ -145,3 +145,25 @@ const updatedCat1 = createCat('Nala', cat1.gender)
 
 
 // FIRST CLASS FUNCTIONS
+// Creating an array of functions or passing functions as arguments to other functions, 
+// returning functions from other functions. However, in functional programming -
+// it's in fact a source of tremendous flexibility. --> THESE ARE FIRST CLASS FUNCTIONS
+// it allows us to treat functions in a very similar way to how we normally treat other values such as numbers, strings, and objects.
+// world of possibilities in terms of software design.
+// greatly increases our opportunities for code re-use.
+
+// In object-oriented programming, since functions and data are both defined within
+// the same class, they tend to be tightly coupled. In other words, the functions 
+// inside a given class usually reference the data that they operate on directly, 
+// as is the case here with this.name. In other words, you generally can't 
+// take a given function and remove it from the class it's in and still have it 
+// work on its own. In functional programming on the other hand, we designed our 
+// functions specifically so that they work in isolation. All of the data that a 
+// function needs to operate on is passed in through the arguments, and the only 
+// thing that will change the output of the function is a change in the arguments. 
+// In other words, functions aren't influenced by any kind of internal or external 
+// state. There's a name for this kind of function. We call them pure functions, 
+// and in functional programming, we try our best to make every single one of our 
+// functions pure. And this is what we mean when we say that we want to keep data 
+// and functions separate.
+
